@@ -1,0 +1,167 @@
+/* General styles */
+body {
+    font-family: "SoDo Sans SemiBold", Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+/* Header styles */
+.navbar {
+    z-index: 1000;
+    position: fixed;
+    padding: 10px 200px;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 3px 4px 0px rgba(34,97,38,0.7);
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar-left img {
+    width: 90px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.navbar-left div {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-left > *, .navbar-right > * {
+    margin: 10px;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.app-download {
+    font-weight: 300;
+    padding-right: 20px;
+}
+
+.login, .sign-up {
+    font-weight: 200;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 5px 20px;
+}
+
+.sign-up {
+    background-color: black;
+    color: white;
+}
+
+.login:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+}
+
+.sign-up:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    color: white;
+}
+
+.navbar-left div:hover, .app-download:hover {
+    cursor: pointer;
+    color: #1F5014;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1f5014;
+    font-size: 16px;
+    padding-top: 10px;
+    position: relative;
+    height: 250px;
+}
+
+.container {
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    padding: 10px 200px;
+    justify-content: space-between;
+}
+
+.row-left {
+    text-align: left;
+    max-width: 350px;
+}
+
+.row-middle img {
+    height: 150px;
+    width: 150px;
+}
+
+.row-right {
+    text-align: right;
+}
+
+.socials img {
+    max-width: 30px;
+    height: 30px;
+}
+
+.location img {
+    max-width: 30px;
+    height: 30px;
+    position: relative;
+    top: 5px;
+}
+
+.vertical {
+    color: #f2ae2b;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    transform: rotate(-90deg);
+    text-align: right;
+    margin-top: 6rem;
+}
+
+.subfooter {
+    width: 100%;
+    height: 75px;
+    background-color: rgb(17, 17, 17);
+    color: #757575;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    padding: 0px 200px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.policy {
+    display: flex;
+    gap: 10px;
+}
+
+.downloads img {
+    max-height: 38px;
+    padding-bottom: 10px;
+}
+
+.copyright {
+    margin: 0;
+    color: #fff;
+}
+
+main {
+    display: column;
+    padding: 10px 200px;
+    border-top-width: 10px;
+}
