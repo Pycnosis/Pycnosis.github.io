@@ -1,7 +1,7 @@
 // Falling Hearts Animation
 document.addEventListener("DOMContentLoaded", function () {
     const body = document.body;
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 30; i++) {
         const heart = document.createElement("div");
         heart.classList.add("heart-background");
         heart.style.setProperty("--x", Math.random() * 100 + "vw");

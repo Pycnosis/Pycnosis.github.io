@@ -110,17 +110,25 @@ footer {
 
 /* Falling Hearts Animation */
 @keyframes fall {
-    0% { top: -10%; opacity: 1; }
-    100% { top: 100%; opacity: 0; }
+    0% { top: -10%; }
+    100% { top: 100%; }
 }
 
 .heart-background {
     position: absolute;
     top: -10%;
     left: var(--x);
-    width: 15px;
-    height: 15px;
+    max-width: 30px; /* Adjust size as needed */
+    height: 30px;
     background-color: #ff4d4d;
-    clip-path: polygon(50% 0%, 100% 35%, 82% 100%, 50% 70%, 18% 100%, 0% 35%);
+    /* Perfect heart shape using polygon */
+    --c: #ff4d4d;
+  width: 200px;
+  aspect-ratio: 1;
+  background:
+   radial-gradient(at 70% 31%,var(--c) 29%,#0000 30%),
+   radial-gradient(at 30% 31%,var(--c) 29%,#0000 30%),
+   linear-gradient(var(--c) 0 0) bottom/100% 50% no-repeat;
+  clip-path: polygon(-43% 0,50% 91%, 143% 0);
     animation: fall var(--duration) linear infinite;
 }
